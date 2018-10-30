@@ -12,13 +12,13 @@ This application is a NodeJS API that uses the Express framework to create, upda
 
 ```
 
-##Dev Dependencies
+## Dev Dependencies
 ```
   expect
   mocha
   nodemon
   supertest
-  
+
 ```
 To install all dependencies type the below command
 
