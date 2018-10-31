@@ -35,6 +35,10 @@ This tests if a new Todo can be created and expects a 200 code to be returned
 ### should not create todo with invalid body data
 This test checks for the creation of invalid entries and expects a return code of 400 if there is no text submitted
 
+### should get all todos
+This test passes if the test returns two Todo's from the database. 
+
+
 ## To run the above test type the below command
 
 ```
