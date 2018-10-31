@@ -51,6 +51,17 @@ This test returns 200 if a search returns a document with the specified ID.
 ### should return 404 for non-object ids
 This test returns error 404 if the specified ID does not convert to a valid ObjectID
 
+### should remove a todo
+This test returns 200 if a Todo is succefuly deleted
+
+### should return 404 if object id is invalid
+This test returns error 404 if the specified ID does not convert to a valid ObjectID when deliting a Todo
+
+### should return 404 if todo not found
+This test returns error 404 if the ID is not found when deleting a Todo
+
+
+
 
 ## To run the above test type the below command from the application directory
 
