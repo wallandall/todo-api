@@ -1,6 +1,11 @@
 # Todo API
 
-This application is a NodeJS API that uses the Express framework to create, update and delete Todo's
+This application is a NodeJS API that uses the Express framework to create, update and delete Todo items
+
+# Demo
+
+Here is a working live demo: https://webe-todo-api.herokuapp.com
+
 
 # Installing
 ## Dependencies
@@ -20,7 +25,7 @@ This application is a NodeJS API that uses the Express framework to create, upda
   supertest
 
 ```
-To install all dependencies type the below command
+To install all dependencies type the below command from the application directory
 
 ```
 npm install
@@ -42,15 +47,22 @@ This test passes if the test returns two Todo's from the database.
 This test returns 200 if a search returns a document with the specified ID.
 
 ### should return 404 if todo not found
-This test returns 404 error if the todo with an invalid ID is not found
 
 ### should return 404 for non-object ids
 This test returns error 404 if the specified ID does not convert to a valid ObjectID
 
 
-## To run the above test type the below command
+## To run the above test type the below command from the application directory
 
 ```
 npm run test-watch
 
 ```
+## Endpoints
+### Todo
+- GET todo
+- GET todo/id
+- POST todo
+- DELETE todo/id
+
+### User
