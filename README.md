@@ -61,7 +61,11 @@ This test returns error 404 if the specified ID does not convert to a valid Obje
 ### should return 404 if todo not found
 This test returns error 404 if the ID is not found when deleting a Todo
 
+### should update the todo
+This test returns 200 if the text of a Todo is updated, completed set to true and completedAt set to a number
 
+### should clear completedAt when todo is not completed
+This test returns 200 if the text of a Todo is updated, the completed is set t false and clears the completedAt field
 
 
 ## To run the above test type the below command from the application directory
