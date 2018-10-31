@@ -14,6 +14,7 @@ Here is a working live demo: https://webe-todo-api.herokuapp.com
   express
   mongodb
   mongoose
+  lodash
 
 ```
 
@@ -75,5 +76,6 @@ npm run test-watch
 - GET todo/id
 - POST todo
 - DELETE todo/id
+- PATCH todo/id
 
 ### User
