@@ -15,6 +15,8 @@ Here is a working live demo: https://webe-todo-api.herokuapp.com
   mongodb
   mongoose
   lodash
+  validator
+  jsonwebtoken
 
 ```
 
@@ -32,43 +34,24 @@ To install all dependencies type the below command from the application director
 npm install
 
 ```
-# Running the tests
+# Running the program
 
-### should create a new todo
+## Environment Variables
+- PORT
+  - Defines the Port the application runs on
+- MONGODB_URI
+  - Defines the URL for MongoDB
+- NODE_ENV
+  - The Node Environment eg: production, test or development
 
-This tests if a new Todo can be created and expects a 200 code to be returned
+## To to run the program type the below command from the application directory
 
-### should not create todo with invalid body data
-This test checks for the creation of invalid entries and expects a return code of 400 if there is no text submitted
+```
+npm start
 
-### should get all todos
-This test passes if the test returns two Todo's from the database.
+```
 
-### should return todo doc
-This test returns 200 if a search returns a document with the specified ID.
-
-### should return 404 if todo not found
-
-### should return 404 for non-object ids
-This test returns error 404 if the specified ID does not convert to a valid ObjectID
-
-### should remove a todo
-This test returns 200 if a Todo is succefuly deleted
-
-### should return 404 if object id is invalid
-This test returns error 404 if the specified ID does not convert to a valid ObjectID when deliting a Todo
-
-### should return 404 if todo not found
-This test returns error 404 if the ID is not found when deleting a Todo
-
-### should update the todo
-This test returns 200 if the text of a Todo is updated, completed set to true and completedAt set to a number
-
-### should clear completedAt when todo is not completed
-This test returns 200 if the text of a Todo is updated, the completed is set t false and clears the completedAt field
-
-
-## To run the above test type the below command from the application directory
+## To run the all tests type the below command from the application directory
 
 ```
 npm run test-watch
@@ -76,10 +59,11 @@ npm run test-watch
 ```
 ## Endpoints
 ### Todo
-- GET todo
-- GET todo/id
-- POST todo
-- DELETE todo/id
-- PATCH todo/id
+- GET todos
+- GET todos/id
+- POST todos
+- DELETE todos/id
+- PATCH todos/id
 
 ### User
+- GET users
