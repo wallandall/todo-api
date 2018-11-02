@@ -13,10 +13,12 @@ var app = express();
 const port = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
-app.post('/todos',(req, res) => {
+
+app.post('/todos', (req, res) => {
   var todo = new Todo({
     text: req.body.text
   });
+
   todo.save().then((doc) => {
     res.send(doc);
   }, (e) => {
@@ -62,7 +64,7 @@ app.delete('/todos/:id', (req, res) => {
       return res.status(404).send();
     }
 
-    res.send({todo: todo});
+    res.send({todo});
   }).catch((e) => {
     res.status(400).send();
   });
@@ -91,7 +93,7 @@ app.patch('/todos/:id', (req, res) => {
     res.send({todo});
   }).catch((e) => {
     res.status(400).send();
-  });
+  })
 });
 
 // POST /users
