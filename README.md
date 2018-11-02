@@ -67,3 +67,4 @@ npm run test-watch
 
 ### User
 - GET users
+- GET users/me
