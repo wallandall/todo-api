@@ -17,6 +17,7 @@ Here is a working live demo: https://webe-todo-api.herokuapp.com
   lodash
   validator
   jsonwebtoken
+  bcryptjs
 
 ```
 
