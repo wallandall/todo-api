@@ -67,5 +67,6 @@ npm run test-watch
 - PATCH todos/id
 
 ### User
+- POST users
 - GET users
 - GET users/me
