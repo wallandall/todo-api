@@ -72,3 +72,5 @@ npm run test-watch
 - POST users
 - GET users
 - GET users/me
+- POST users/login
+- DELETE /users/me/token
